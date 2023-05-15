@@ -5,12 +5,15 @@ import './styles/main.scss';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/signin">SignIn</Route>
-        <Route path="/">Home</Route>
-      </Switch>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Switch>
+    //     <Route path="/signin">SignIn</Route>
+    //     <Route path="/">Home</Route>
+    //   </Switch>
+    // </BrowserRouter>
+    <>
+      <h1>Hello</h1>
+    </>
   );
 }
 
