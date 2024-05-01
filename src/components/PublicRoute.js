@@ -4,8 +4,8 @@ import { Redirect, Route } from 'react-router-dom';
 function PublicRoute({ children, ...routeProps }) {
   const profile = false;
 
-  if (!profile) {
-    return <Redirect to="/signin" />;
+  if (profile) {
+    return <Redirect to="/" />;
   }
 
   return (
