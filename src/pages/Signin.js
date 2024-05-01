@@ -36,7 +36,7 @@ function Signin() {
                 <p>Progressive chat app for neophytes</p>
               </div>
               <div className="mt-3">
-                <Button block color="primary" onClick={signInWithFacebook}>
+                <Button block color="blue" onClick={signInWithFacebook}>
                   <Icon icon="facebook" /> Continue with Facebook
                 </Button>
                 <Button block color="green" onClick={signInWithGoogle}>

@@ -7,10 +7,14 @@ import PublicRoute from './components/PublicRoute';
 
 import Signin from './pages/Signin';
 import Home from './pages/Home';
+import { ProfileProvider } from './context/profile.context';
 
 function App() {
+ 
   return (
-    <BrowserRouter>
+
+    <ProfileProvider>
+      <BrowserRouter>
       <Switch>
         <PublicRoute path="/signin">
           <Signin />
@@ -20,6 +24,7 @@ function App() {
         </PrivateRoute>
       </Switch>
     </BrowserRouter>
+    </ProfileProvider>
   );
 }
 
